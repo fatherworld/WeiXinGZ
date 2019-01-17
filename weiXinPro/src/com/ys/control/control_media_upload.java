@@ -15,7 +15,6 @@ import com.ys.common.*;
 import java.lang.StringBuilder;
 import com.ys.utils.Media_Type;
 import com.ys.messages.Video;
-
 public class control_media_upload {
 	
 	
@@ -82,9 +81,14 @@ private int maxMediaSize;
 		
 		String appId = IdAndSecret.appId; 
 		String appSecret = IdAndSecret.appSecret; 
-		String accessToken = uploadMediaApiUtil.getAccessToken(appId,appSecret);
+		
+		//String accessToken = uploadMediaApiUtil.getAccessToken(appId,appSecret);
+		//该Token是根据线程在实时的获取
+		String accessToken = AccessTokenInfo.accessToken.getTokenName();
+
 		
 		System.out.println("current accessToken is "+accessToken);
+		
 		if(media_type == Media_Type.IMAGE)
 		{
 			//目前只支持jpg格式

@@ -1,5 +1,9 @@
 package com.ys.servlet;
 import com.alibaba.fastjson.JSON;
+
+
+
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +18,8 @@ import com.ys.common.IdAndSecret;
 /**
  * Servlet implementation class AccessTokenServlet
  */
+
+//该servlet是为了启动时候一张不停的获取token
 @WebServlet("/servlet/AccessTokenServlet")
 public class AccessTokenServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

@@ -44,6 +44,7 @@ public class UploadMediaApiUtil {
      return String.format(DOWNLOAD_MEDIA, token, mediaId);
     }
 
+   
     /**
      * 通用接口获取token凭证
      * @param appId
