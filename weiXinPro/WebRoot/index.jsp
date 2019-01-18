@@ -17,6 +17,13 @@
       </form>
 
       <hr/>
+      
+       <h3>创建自定义菜单!</h3>
+      <form action="${pageContext.request.contextPath}/servlet/AccessWidgetsServlet" method="get">
+          <button onclick="submit">创建自定义菜单</button>
+      </form>
+
+      <hr/>
 		
       <%--获取access_token--%>
       <form action="${pageContext.request.contextPath}/servlet/AccessTokenServlet" method="get">

@@ -23,8 +23,6 @@
   </servlet>
   <servlet>
     <servlet-name>AccessWidgetsServlet</servlet-name>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <description>This is the description of my J2EE component</description>
     <servlet-class>com.ys.servlet.AccessWidgetsServlet</servlet-class>
   </servlet>
 
