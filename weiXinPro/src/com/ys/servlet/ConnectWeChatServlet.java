@@ -112,6 +112,7 @@ public class ConnectWeChatServlet extends HttpServlet {
 			 
 			 if(msgType.toUpperCase().equals("TEXT")){
 				 
+				 System.out.println("Text");
 				 ysMessageUtil = new MessageUtil(6,"F:\\myEclipseWorkSpace\\WebTest\\imageData\\",Media_Type.IMAGE);
 				 result = ysMessageUtil.buildXml(map);
 			 }
